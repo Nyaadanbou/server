@@ -1,8 +1,10 @@
 # 资源包使用流程
 
+以下的根无特殊说明都指插件根目录！
+
 ## 生成资源包
 
-使用 `/wakame resourcepack generate` 命令，根据插件根目录下 `assets` 目录的配置生成资源包，生成的资源包将存放于 `generated/` 目录。
+使用 `/wakame resourcepack generate` 命令，根据根目录下 `assets` 目录的配置生成资源包，生成的资源包将存放于 `generated/` 目录。
 
 ## 资源包配置规则
 
@@ -37,7 +39,7 @@ assets/
 ## 添加物品材质
 
 1. 在物品配置中添加 `assets` 配置：
-   - 对于简单单贴图物品（如苹果、木棍），指定 `variant` 和单个 `path`，`path` 为贴图相对于 `assets` 的路径。
+   - 对于简单单贴图物品（如苹果、木棍），指定 `variant` 和单个 `path`，`path` 为贴图相对路径。
      ```yaml
      assets:
        - variant: 0
