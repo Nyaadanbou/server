@@ -10,10 +10,22 @@
 
 Wakame 的资源包有着类似 Minecraft 原版但又独特的配置规则.
 
+基本结构
+
+```
+assets/
+├─ models/
+│  ├─ short_sword/ # 可自定义
+│  │  ├─ demo.json
+├─ textures/
+│  ├─ short_sword/ # 可自定义
+│  │  ├─ demo.png
+```
+
 将会进行特定处理的配置文件夹:
   1. `bbmodels`: 将会根据 bbmodel 生成模型.
-  2. `models`: 与 Minecraft 资源包配置类似, 但是 `textures` 内的路径可直接写贴图图片与 `assets` 的相对路径, 需在物品内通过 `path` 进行引用.
-  3. `textures`: 与 Minecraft 资源包配置类似,
+  2. `textures`: 存放贴图文件\(png\), 与 Minecraft 资源包配置类似.
+  3. `models`: 存放模型文件\(json\), 与 Minecraft 资源包配置类似, 但是 `textures.layer0` 内的路径可直接写贴图图片与 `assets/textures` 的相对路径. 需在物品内通过 `path` 进行引用.
 
 ## 资源包的上传
 
